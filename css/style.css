@@ -36,19 +36,22 @@
     background-color: var(--secondary-text-background-color);
   }
 /* Цвет и шрифт cсылок меню навигации */
- .header-nav a{ 
-  color: var(--title-text-color);
-
+ .header-nav .link-nav{ 
+  color:  var(--title-text-color);
+ 
   font-weight: 500; 
   line-height: 1.14px;
   letter-spacing: 0.02em;
-  text-decoration: none;
- /* xoвер, фокус элементы навигации */ 
- }
- .header-nav a:hover, .header-nav a :focus, .header-nav a:active {
+  text-decoration: none;  
+ } 
+ .header-nav .link-nav:hover,.header-nav a:focus {
+  color: var(--accent-color);
+  
+ } 
+ .header-nav .link-nav.current{
   color: var(--accent-color);
  } 
- 
+   
 
  /* Цвет и шрифт cсылок телефон и почта */ 
  .contacts a{ 
@@ -75,8 +78,10 @@
  }
  .items-works{list-style: none;
  }
+ .items-buttons{list-style: none;
+}
 /* xoвер, фокус - телефон и почта */ 
- .contacts a:hover, .header-nav a :focus  {
+ .contacts a:hover, .contacts a :focus  {
  color: var(--accent-color);
 }
 
@@ -110,6 +115,7 @@
   font-size: 44px;
   line-height: 1.36;
   text-align: center;
+  text-transform: uppercase;
   letter-spacing: 0.06em;
 
   }
@@ -133,6 +139,7 @@
  /* шрифты заголовки секция преимущества */
  .subtitle{
   font-weight: 700;
+  font: size 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
  }
@@ -220,7 +227,7 @@ line-height: 1.19
     font-style: normal;
     line-height: 1.71;
     text-decoration: none;
-  }upp
+  }
   /* xoвер, фокус адрес в футере */
   .link-town:hover, .link-town:focus{
     color: var(--accent-color);
